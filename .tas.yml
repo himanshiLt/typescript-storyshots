@@ -5,11 +5,12 @@ preRun:
         - yarn install
 preMerge:
   pattern:
-    - "./test/stories.ts"
+    - "./test/*{.ts,.tsx}"
 postMerge:
   pattern: 
-    - "./test/stories.ts"
+    - "./test/*{.ts,.tsx}"
 postRun:
      command:
         - yarn --version
+configFile: package.json
 version: 1.0
